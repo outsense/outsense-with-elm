@@ -52,18 +52,6 @@ header.site-header {
   @extend .is-primary;
   border-bottom: solid 0.1rem $light;
 
-  @media screen and (max-width: 479px) {
-    grid-template-columns: 5% 17rem auto 5%;
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 1279px) {
-    grid-template-columns: 2rem 17rem auto 2rem;
-  }
-
-  @media screen and (min-width: 1280px) {
-    grid-template-columns: 5% 17rem auto 5%;
-  }
-
   h1 {
     @extend .navbar-brand;
 
@@ -355,7 +343,7 @@ section.company {
     tr {
       @media screen and (min-width: 480px) {
         &:nth-child(odd) {
-          background: hsl(225, 50%, 25%);
+          background: $light;
         }
       }
 
